@@ -25,14 +25,25 @@ function startBattle(e) {
         });
     }
 
+    // Changin icons color to their default outline
+    const allIcons = document.querySelectorAll('.game-box .far');
+    allIcons.forEach(icon => {
+        icon.classList.remove("selected")
+    })
+    
+
     // Assigning user's weapon
     selectedWeapon = e.title; 
     userBox.querySelector(".result").textContent = `---${selectedWeapon}`;
+    // Make the selected icon in Black
+    userBox.querySelector(`i[title = '${selectedWeapon}']`).classList.add("selected")
 
     // Selecting a random weapon from weapons array for computer
     let guess = Math.floor(Math.random() * 5);
     computerWeapon = weapons[guess]
     computerBox.querySelector(".result").textContent = `---${computerWeapon}`;
+    // Make the selected icon in Black for computer selection
+    computerBox.querySelector(`i[title = '${computerWeapon}']`).classList.add("selected")
 
     // compare weapons
     compareWeapons(selectedWeapon,computerWeapon)
