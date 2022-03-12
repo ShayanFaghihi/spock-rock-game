@@ -2,6 +2,8 @@
 
 Have you ever watched the "Big Bang Theory" series? In  that Sheldon introduces a new game so similar to the routine kids "Rock Paper Scissors" game.
 
+YouTube Link : https://www.youtube.com/watch?v=405Nh2H4Ucg
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -21,7 +23,7 @@ I have tried to implement the game rules in a way you can play with the computer
 ### Screenshot
 
 ![Design preview for the Rock Paper Scissors Lizard Spock Game](./design/desktop-preview.png)
-
+![Rules for the Rock Paper Scissors Lizard Spock Game](./design/rules.png)
 
 ### Links
 
