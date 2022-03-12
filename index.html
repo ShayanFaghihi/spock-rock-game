@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spock Rock Game</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1 class="title">Rock paper Scissors Lizard Spock</h1>
+        </div>
+        <div class="game-box">
+            <div class="game-box__self">
+                <h2 class="game-box__scores">You - <span class="score">0</span> <span class="result"></span></h2>
+                <div class="game-box__weapons">
+                    <i class="far fa-hand-rock" title="Rock" onclick="startBattle(this)"></i>
+                    <i class="far fa-hand-paper" title="Paper" onclick="startBattle(this)"></i>
+                    <i class="far fa-hand-scissors" title="Scissors" onclick="startBattle(this)"></i>
+                    <i class="far fa-hand-lizard" title="Lizard" onclick="startBattle(this)"></i>
+                    <i class="far fa-hand-spock" title="Spock" onclick="startBattle(this)"></i>
+                </div>
+            </div>
+            <div class="game-box__computer">
+                <h2 class="game-box__scores">Computer - <span class="score">0</span> <span class="result"></span></h2>
+                <div class="game-box__weapons">
+                    <i class="far fa-hand-rock" title="Rock"></i>
+                    <i class="far fa-hand-paper" title="Paper"></i>
+                    <i class="far fa-hand-scissors" title="Scissors"></i>
+                    <i class="far fa-hand-lizard" title="Lizard"></i>
+                    <i class="far fa-hand-spock" title="Spock"></i>
+                </div>
+            </div>
+            <button class="btn" title="Reset"><i class="fa fa-sync-alt"></i></button>
+        </div>
+        <div class="results"></div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-main : rgb(30, 122, 207);
+    --clr-contrast : #e25252; 
+    --clr-dark : rgb(70, 70, 70);
+    --clr-background : rgb(231, 231, 231);
+
+    font-size: 10px;
+}
+
+@media (min-width:768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: min(90%,500px);
+    margin-inline: auto;
+    border-radius: 10px;
+    box-shadow: 2px 5px 15px rgba(70, 70, 70, 0.253);
+    padding: 6rem 2rem 2rem;
+    position: relative;
+}
+
+
+/* Main Game Box */
+.title-box {
+    background-color: var(--clr-main);
+    position: absolute;
+    top: -10%;
+    right: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.title-box .title {
+    color: #fff;
+}
+
+
+.game-box {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.game-box__scores {
+    font-size: 1.5rem;
+    color: var(--clr-dark);
+    margin-bottom: 1rem;
+}
+
+.game-box__self .game-box__scores .result {color: var(--clr-main);}
+.game-box__computer .game-box__scores .result {color: var(--clr-contrast);}
+
+.game-box .game-box__weapons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.game-box .game-box__weapons i{
+    font-size: 4rem;
+    cursor: pointer;
+}
+.game-box .game-box__weapons i.selected {
+    color:var(--clr-dark)
+}
+
+.game-box__self .game-box__weapons i {
+    color: var(--clr-main);
+}
+
+
+.game-box__computer .game-box__weapons i {
+    color: var(--clr-contrast);
+}
+
+.game-box .btn {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 2rem;
+    color: var(--clr-dark);
+}
+
+.results {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--clr-dark);
+}
+
+
+/* Confetti Animation */
+#confetti-canvas {position: absolute;}
